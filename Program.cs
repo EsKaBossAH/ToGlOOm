@@ -17,7 +17,7 @@ namespace Lab1
         map.Add("B150910044", "(E|A)");
         map.Add("B150910032", "(:D)");
         map.Add("B150910001", "(()))))");
-        map.Add("B150910003", "(:P)");
+        map.Add("B150910003", "(:o)");
 
         foreach (var pair in map)
         {
