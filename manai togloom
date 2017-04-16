@@ -57,23 +57,19 @@ namespace Biedaalt
                 Console.SetCursorPosition(b_x, b_y);
                 Console.Write('$');
                 if (Console.KeyAvailable)
-                {
-                    ConsoleKeyInfo key = Console.ReadKey();
-                    switch (key.Key)
                     {
-                        case ConsoleKey.LeftArrow:
+                        ConsoleKeyInfo toets = Console.ReadKey(true);
+                        //Console.WriteLine(toets.Key.ToString());
+                       
+                        if (toets.Key.Equals(ConsoleKey.LeftArrow) )
+                        {
                             x = x - 1;
-                            break;
-                        case ConsoleKey.RightArrow:
+                        }
+                        if (toets.Key.Equals(ConsoleKey.RightArrow))
+                        {
                             x = x + 1;
-                            break;
-                        case ConsoleKey.Escape:
-                            //Console.Clear();
-                            Console.WriteLine("Game over");
-                           
-                            break;
-                    }
-                    //Thread.Sleep(10);
+                        }
+                    }                    //Thread.Sleep(10);
                     if (x < WIDTH - 4 && x > 0)
                     {
                         Console.SetCursorPosition(x0, y0);
