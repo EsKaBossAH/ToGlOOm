@@ -50,7 +50,7 @@ namespace Biedaalt
             {
                 move = bump(move, map, b_x, b_y);
 
-                Console.SetCursorPosition(b_x0, b_y0);
+                Console.SetCursorPosition(b_x0, b_y6);
                 Console.Write(' ');
                 b_x = b_x + move[0];
                 b_y += move[1];
